@@ -8,6 +8,8 @@ async function bootstrap() {
 
     const logger = new Logger("Main-Gateway")
 
+    console.log("hola mundo primer cambio");
+
     const app = await NestFactory.create(AppModule);
 
     app.setGlobalPrefix('api')
